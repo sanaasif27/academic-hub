@@ -1,0 +1,166 @@
+# =============================================================
+#  Decap CMS configuration — this builds your visual editor.
+#  The ONE thing you must edit: the `repo:` line below.
+# =============================================================
+
+backend:
+  name: github
+  repo: your-github-username/academic-hub      # <-- CHANGE THIS to your repo
+  branch: main
+  # Authentication is handled by Netlify's free OAuth broker (default).
+  # The deploy guide walks you through the one-time GitHub OAuth app setup.
+
+# Uploaded files (handouts, PDFs, images, your CV) land here:
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Show a friendly editor; keep entries tidy.
+publish_mode: simple
+site_url: https://example.netlify.app          # <-- update after deploy
+display_url: https://example.netlify.app       # <-- update after deploy
+
+collections:
+  # ---------------------------------------------------------- WRITING (blog)
+  - name: posts
+    label: "Writing (blog posts)"
+    label_singular: "Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: yaml-frontmatter
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, picker_utc: false }
+      - { name: summary, label: "Short summary (1–2 sentences)", widget: text, required: false }
+      - { name: tags, label: Tags, widget: list, default: [], required: false }
+      - { name: cover, label: "Cover image (optional)", widget: image, required: false }
+      - { name: draft, label: "Save as draft (hidden from the site)", widget: boolean, default: false }
+      - { name: body, label: "Post", widget: markdown }
+
+  # ---------------------------------------------------------- FOR STUDENTS
+  - name: students
+    label: "Teaching — for students"
+    label_singular: "Student material"
+    folder: "content/students"
+    create: true
+    slug: "{{slug}}"
+    format: yaml-frontmatter
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: course, label: "Course / group", widget: string, required: false }
+      - { name: date, label: Date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { name: description, label: "Description", widget: text }
+      - { name: file, label: "Upload file (PDF, DOCX, ZIP…)", widget: file, required: false }
+      - { name: link, label: "…or external link instead", widget: string, required: false }
+      - { name: featured, label: "Pin to top (featured)", widget: boolean, default: false }
+      - { name: body, label: "Notes (optional)", widget: markdown, required: false }
+
+  # ---------------------------------------------------------- FOR COLLEAGUES
+  - name: colleagues
+    label: "Resources — for colleagues"
+    label_singular: "Resource"
+    folder: "content/colleagues"
+    create: true
+    slug: "{{slug}}"
+    format: yaml-frontmatter
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: category, label: "Category", widget: string, required: false }
+      - { name: date, label: Date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { name: description, label: "Description", widget: text }
+      - { name: file, label: "Upload file", widget: file, required: false }
+      - { name: link, label: "…or external link instead", widget: string, required: false }
+      - { name: license, label: "License / reuse note", widget: string, required: false }
+      - { name: body, label: "Notes (optional)", widget: markdown, required: false }
+
+  # ---------------------------------------------------------- PAGES (singletons)
+  - name: pages
+    label: "Pages"
+    files:
+      - name: home
+        label: "Home page"
+        file: "content/pages/home.md"
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: Title, widget: hidden, default: "Home" }
+          - { name: hero_heading, label: "Hero heading (your name)", widget: string }
+          - { name: hero_sub, label: "Hero subtitle (your role)", widget: string }
+          - { name: hero_blurb, label: "Hero blurb", widget: text }
+          - { name: cta_primary_label, label: "Main button text", widget: string }
+          - { name: cta_primary_url, label: "Main button link", widget: string }
+          - { name: cta_secondary_label, label: "Second button text", widget: string, required: false }
+          - { name: cta_secondary_url, label: "Second button link", widget: string, required: false }
+          - name: panels
+            label: "Three home-page cards"
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: body, label: Text, widget: text }
+              - { name: url, label: Link, widget: string }
+              - { name: cta, label: "Link text", widget: string }
+          - { name: body, label: "Welcome paragraph", widget: markdown }
+      - name: about
+        label: "About page"
+        file: "content/pages/about.md"
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: Title, widget: hidden, default: "About" }
+          - { name: subtitle, label: Subtitle, widget: string }
+          - { name: portrait, label: "Portrait photo", widget: image, required: false }
+          - { name: portrait_alt, label: "Photo description (accessibility)", widget: string, required: false }
+          - { name: body, label: "About text", widget: markdown }
+      - name: cv
+        label: "CV page"
+        file: "content/pages/cv.md"
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: Title, widget: string, default: "Curriculum Vitae" }
+          - { name: subtitle, label: Subtitle, widget: string }
+          - { name: cv_pdf, label: "Full CV (PDF upload)", widget: file, required: false }
+          - { name: updated, label: "Last updated", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, required: false }
+          - { name: body, label: "Short web CV", widget: markdown }
+      - name: contact
+        label: "Contact page"
+        file: "content/pages/contact.md"
+        format: yaml-frontmatter
+        fields:
+          - { name: title, label: Title, widget: hidden, default: "Contact" }
+          - { name: subtitle, label: Subtitle, widget: string }
+          - { name: show_form, label: "Show the message form", widget: boolean, default: true }
+          - { name: body, label: "Contact text", widget: markdown }
+
+  # ---------------------------------------------------------- SITE SETTINGS
+  - name: settings
+    label: "Site settings"
+    editor: { preview: false }
+    files:
+      - name: general
+        label: "Name, nav & links"
+        file: "content/site.yml"
+        format: yaml
+        fields:
+          - { name: name, label: "Your name", widget: string }
+          - { name: role, label: "Role / title", widget: string }
+          - { name: institution, label: "Institution", widget: string }
+          - { name: tagline, label: "Tagline", widget: string }
+          - { name: intro, label: "Intro paragraph", widget: text }
+          - { name: email, label: "Email", widget: string, required: false }
+          - { name: location, label: "Location", widget: string, required: false }
+          - { name: base_url, label: "Live site address (after deploy)", widget: string, required: false }
+          - { name: footer_note, label: "Footer note", widget: string, required: false }
+          - name: social
+            label: "Profile links"
+            widget: list
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: url, label: URL, widget: string, required: false }
+          - name: nav
+            label: "Top navigation"
+            widget: list
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: url, label: URL, widget: string }

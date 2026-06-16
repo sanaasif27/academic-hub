@@ -1,0 +1,138 @@
+# Config for PagesCMS (pagescms.org) — the no-setup alternative editor.
+# Sign in at pagescms.org with GitHub, install it on this repo, and edit.
+# (The primary editor is Decap CMS at /admin — see admin/config.yml.)
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: posts
+    label: Writing (blog posts)
+    type: collection
+    path: content/posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, draft]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: summary, label: Short summary, type: text }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: cover, label: Cover image, type: image }
+      - { name: draft, label: Draft (hidden), type: boolean, default: false }
+      - { name: body, label: Post, type: rich-text }
+
+  - name: students
+    label: Teaching — for students
+    type: collection
+    path: content/students
+    view:
+      fields: [title, course, date]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: course, label: Course / group, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: description, label: Description, type: text }
+      - { name: file, label: "Uploaded file path (use the Media tab to upload, then paste the path)", type: string }
+      - { name: link, label: "…or external link", type: string }
+      - { name: featured, label: Pin to top, type: boolean, default: false }
+      - { name: body, label: Notes, type: rich-text }
+
+  - name: colleagues
+    label: Resources — for colleagues
+    type: collection
+    path: content/colleagues
+    view:
+      fields: [title, category, date]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: category, label: Category, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: description, label: Description, type: text }
+      - { name: file, label: "Uploaded file path (Media tab → upload → paste path)", type: string }
+      - { name: link, label: "…or external link", type: string }
+      - { name: license, label: License / reuse note, type: string }
+      - { name: body, label: Notes, type: rich-text }
+
+  - name: home
+    label: Home page
+    type: file
+    path: content/pages/home.md
+    fields:
+      - { name: hero_heading, label: Hero heading, type: string }
+      - { name: hero_sub, label: Hero subtitle, type: string }
+      - { name: hero_blurb, label: Hero blurb, type: text }
+      - { name: cta_primary_label, label: Main button text, type: string }
+      - { name: cta_primary_url, label: Main button link, type: string }
+      - { name: cta_secondary_label, label: Second button text, type: string }
+      - { name: cta_secondary_url, label: Second button link, type: string }
+      - name: panels
+        label: Three home cards
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: body, label: Text, type: text }
+          - { name: url, label: Link, type: string }
+          - { name: cta, label: Link text, type: string }
+      - { name: body, label: Welcome paragraph, type: rich-text }
+
+  - name: about
+    label: About page
+    type: file
+    path: content/pages/about.md
+    fields:
+      - { name: subtitle, label: Subtitle, type: string }
+      - { name: portrait, label: Portrait photo, type: image }
+      - { name: portrait_alt, label: Photo description, type: string }
+      - { name: body, label: About text, type: rich-text }
+
+  - name: cv
+    label: CV page
+    type: file
+    path: content/pages/cv.md
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: subtitle, label: Subtitle, type: string }
+      - { name: cv_pdf, label: "CV PDF path (Media tab → upload → paste path)", type: string }
+      - { name: updated, label: Last updated, type: date }
+      - { name: body, label: Short web CV, type: rich-text }
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: content/pages/contact.md
+    fields:
+      - { name: subtitle, label: Subtitle, type: string }
+      - { name: show_form, label: Show message form, type: boolean, default: true }
+      - { name: body, label: Contact text, type: rich-text }
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/site.yml
+    fields:
+      - { name: name, label: Your name, type: string }
+      - { name: role, label: Role / title, type: string }
+      - { name: institution, label: Institution, type: string }
+      - { name: tagline, label: Tagline, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: email, label: Email, type: string }
+      - { name: location, label: Location, type: string }
+      - { name: base_url, label: Live site address, type: string }
+      - { name: footer_note, label: Footer note, type: string }
+      - name: social
+        label: Profile links
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label, type: string }
+          - { name: url, label: URL, type: string }
+      - name: nav
+        label: Top navigation
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label, type: string }
+          - { name: url, label: URL, type: string }

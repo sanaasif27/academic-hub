@@ -1,0 +1,43 @@
+# =============================================================
+#  Global site settings — edited in the CMS under "Site settings"
+#  Everything here is a placeholder. Replace with your real details.
+# =============================================================
+
+name: "Dr. Sana Asif"
+role: "Assistant Professor of English & Digital Humanities"        # <-- edit
+institution: "Xavier University of Punjab"                         # <-- edit
+tagline: "Literature, the digital, and the space between them."
+intro: >
+  I teach and write at the intersection of English literary studies and the
+  Digital Humanities — distant reading, textual editing, archives, and the
+  critical questions computation raises for the humanities. This is where I
+  share my writing, the handouts and readings my students need, and teaching
+  materials for colleagues.
+
+# Where to reach you (leave any blank to hide it)
+email: "sanaasifsana@gmail.com"                                    # <-- edit
+location: "Lahore, Pakistan"                                       # <-- edit
+
+# Social / academic profiles (leave blank to hide)
+social:
+  - { label: "Email",            url: "mailto:sanaasifsana@gmail.com" }
+  - { label: "Google Scholar",   url: "" }
+  - { label: "ORCID",            url: "" }
+  - { label: "Academia.edu",     url: "" }
+  - { label: "LinkedIn",         url: "" }
+
+# Top navigation (order matters)
+nav:
+  - { label: "About",     url: "/about/" }
+  - { label: "Writing",   url: "/writing/" }
+  - { label: "Teaching",  url: "/teaching/" }
+  - { label: "Resources", url: "/resources/" }
+  - { label: "CV",        url: "/cv/" }
+  - { label: "Contact",   url: "/contact/" }
+
+# Production domain (used for absolute links in RSS / sitemap / social cards).
+# After you connect Netlify, paste your real address here, e.g.
+#   https://sanaasif.netlify.app   or   https://drsanaasif.com
+base_url: "https://example.netlify.app"
+
+footer_note: "© Dr. Sana Asif. Built as a static site — fast, private, and yours."

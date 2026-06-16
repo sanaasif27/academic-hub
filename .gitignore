@@ -1,0 +1,18 @@
+# Build output — Netlify regenerates this on every deploy
+_site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Machine-specific local preview helper (hardcodes an absolute path)
+_serve.py
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
