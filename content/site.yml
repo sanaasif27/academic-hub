@@ -21,9 +21,9 @@ social:
   - { label: "Email",          url: "mailto:sana.asif@xup.ac.in" }
   - { label: "ORCID",          url: "https://orcid.org/0000-0001-8690-8244" }
   - { label: "Scopus",         url: "https://www.scopus.com/authid/detail.uri?authorId=58552426700" }
-  - { label: "Google Scholar", url: "" }       # paste your Scholar profile URL here
-  - { label: "ResearchGate",   url: "" }       # paste your ResearchGate URL here
-  - { label: "LinkedIn",       url: "" }        # paste your LinkedIn URL here
+  - { label: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=LbThjBUAAAAJ" }
+  - { label: "ResearchGate",   url: "https://www.researchgate.net/profile/Sana_Asif14" }
+  - { label: "LinkedIn",       url: "https://www.linkedin.com/in/sana-asif-phd-760a96138/" }
 
 # Top navigation (order matters)
 nav:
