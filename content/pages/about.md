@@ -1,6 +1,6 @@
 ---
 title: About
-subtitle: Partition, gender, and the geographies of memory
+subtitle: Dear gentle readers!
 portrait: ""
 portrait_alt: Portrait of Sana Asif
 ---
