@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: your-github-username/academic-hub      # <-- CHANGE THIS to your repo
+  repo: sanaasif27/academic-hub
   branch: main
   # Authentication is handled by Netlify's free OAuth broker (default).
   # The deploy guide walks you through the one-time GitHub OAuth app setup.
