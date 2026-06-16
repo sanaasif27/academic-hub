@@ -1,6 +1,6 @@
 ---
 title: "Home"
-hero_heading: "Dr Sana Asif"
+hero_heading: "Sana Asif"
 hero_sub: "Assistant Professor of English"
 hero_blurb: "Partition and its afterlives — gender, space, and memory — read through teaching, writing, and public scholarship."
 cta_primary_label: "Read my writing"

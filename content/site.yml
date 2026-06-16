@@ -2,7 +2,7 @@
 #  Global site settings — edited in the CMS under "Site settings"
 # =============================================================
 
-name: "Dr Sana Asif"
+name: "Sana Asif"
 role: "Assistant Professor of English"
 institution: "Xavier University, Patna"
 tagline: "Gender, space, and memory in the literature of Partition."
@@ -13,17 +13,17 @@ intro: >
   handouts my students need, and teaching materials for colleagues.
 
 # Where to reach you (leave any blank to hide it)
-email: "sanaasifphd@gmail.com"
+email: "sana.asif@xup.ac.in"
 location: "Patna, Bihar, India"
 
 # Social / academic profiles (leave url blank to hide a row)
 social:
-  - { label: "Email",          url: "mailto:sanaasifphd@gmail.com" }
+  - { label: "Email",          url: "mailto:sana.asif@xup.ac.in" }
   - { label: "ORCID",          url: "https://orcid.org/0000-0001-8690-8244" }
   - { label: "Scopus",         url: "https://www.scopus.com/authid/detail.uri?authorId=58552426700" }
-  - { label: "Google Scholar", url: "" }       # paste your Scholar profile URL
-  - { label: "ResearchGate",   url: "" }       # paste your ResearchGate URL
-  - { label: "LinkedIn",       url: "" }        # paste your LinkedIn URL
+  - { label: "Google Scholar", url: "" }       # paste your Scholar profile URL here
+  - { label: "ResearchGate",   url: "" }       # paste your ResearchGate URL here
+  - { label: "LinkedIn",       url: "" }        # paste your LinkedIn URL here
 
 # Top navigation (order matters)
 nav:
@@ -39,4 +39,4 @@ nav:
 #   https://sanaasif.netlify.app   or   https://drsanaasif.com
 base_url: "https://example.netlify.app"
 
-footer_note: "© Dr Sana Asif. Built as a static site — fast, private, and yours."
+footer_note: "© Sana Asif. Built as a static site — fast, private, and yours."

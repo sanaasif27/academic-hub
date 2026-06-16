@@ -386,11 +386,11 @@ def build_writing_index():
         listing = '<div class="empty">No posts yet. Add your first one in <a href="/admin/">the editor</a>.</div>'
     inner = f"""<section class="section">
       <div class="wrap narrow">
-        <div class="section-head"><p class="kicker">Writing</p><h1>Essays &amp; notes</h1><p>Thinking-in-progress on literature and the digital humanities.</p></div>
+        <div class="section-head"><p class="kicker">Writing</p><h1>Essays &amp; notes</h1><p>Thinking-in-progress on Partition literature, gender, and memory.</p></div>
         {listing}
       </div>
     </section>"""
-    return layout(title="Writing", description="Essays and notes on literature and the digital humanities.",
+    return layout(title="Writing", description="Essays and notes on Partition literature, gender, and memory.",
                   body=inner, active="writing", canonical="/writing/")
 
 def build_post(post):

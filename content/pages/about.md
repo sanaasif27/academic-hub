@@ -2,10 +2,10 @@
 title: "About"
 subtitle: "Partition, gender, and the geographies of memory"
 portrait: ""          # optional: upload a photo in the CMS; path goes here
-portrait_alt: "Portrait of Dr Sana Asif"
+portrait_alt: "Portrait of Sana Asif"
 ---
 
-I am **Dr Sana Asif**, an Assistant Professor of English at Xavier University,
+I am **Sana Asif**, an Assistant Professor of English at Xavier University,
 Patna. I completed my PhD at the **National Institute of Technology Patna** in
 2024, with a thesis on *Gender and Spaces in Partition Fiction: A Study of Select
 Novels by Muslim Women*.
