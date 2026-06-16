@@ -2,7 +2,7 @@
 title: "Welcome — and what this site is for"
 date: "2026-06-16"
 summary: "Why I built a small, fast, public home for my writing and teaching — and how to find your way around it."
-tags: ["notes", "digital humanities"]
+tags: ["notes"]
 cover: ""
 draft: false
 ---
@@ -16,7 +16,7 @@ public place that I control.
 
 So this site has three jobs:
 
-1. **Writing** — essays and shorter notes on literature and the digital humanities.
+1. **Writing** — essays and shorter notes on Partition literature, gender, and memory.
 2. **Teaching** — handouts and readings my current students can download any time, with no login.
 3. **Resources** — teaching packs and templates colleagues are welcome to adapt.
 

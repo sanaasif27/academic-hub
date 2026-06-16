@@ -1,30 +1,29 @@
 # =============================================================
 #  Global site settings — edited in the CMS under "Site settings"
-#  Everything here is a placeholder. Replace with your real details.
 # =============================================================
 
-name: "Dr. Sana Asif"
-role: "Assistant Professor of English & Digital Humanities"        # <-- edit
-institution: "Xavier University of Punjab"                         # <-- edit
-tagline: "Literature, the digital, and the space between them."
+name: "Dr Sana Asif"
+role: "Assistant Professor of English"
+institution: "Xavier University, Patna"
+tagline: "Gender, space, and memory in the literature of Partition."
 intro: >
-  I teach and write at the intersection of English literary studies and the
-  Digital Humanities — distant reading, textual editing, archives, and the
-  critical questions computation raises for the humanities. This is where I
-  share my writing, the handouts and readings my students need, and teaching
-  materials for colleagues.
+  I research and teach at the intersection of Partition studies, gender, and
+  memory — with a particular focus on the spatial worlds of Partition fiction
+  by Muslim women. This site is where I share my writing, the readings and
+  handouts my students need, and teaching materials for colleagues.
 
 # Where to reach you (leave any blank to hide it)
-email: "sanaasifsana@gmail.com"                                    # <-- edit
-location: "Lahore, Pakistan"                                       # <-- edit
+email: "sanaasifphd@gmail.com"
+location: "Patna, Bihar, India"
 
-# Social / academic profiles (leave blank to hide)
+# Social / academic profiles (leave url blank to hide a row)
 social:
-  - { label: "Email",            url: "mailto:sanaasifsana@gmail.com" }
-  - { label: "Google Scholar",   url: "" }
-  - { label: "ORCID",            url: "" }
-  - { label: "Academia.edu",     url: "" }
-  - { label: "LinkedIn",         url: "" }
+  - { label: "Email",          url: "mailto:sanaasifphd@gmail.com" }
+  - { label: "ORCID",          url: "https://orcid.org/0000-0001-8690-8244" }
+  - { label: "Scopus",         url: "https://www.scopus.com/authid/detail.uri?authorId=58552426700" }
+  - { label: "Google Scholar", url: "" }       # paste your Scholar profile URL
+  - { label: "ResearchGate",   url: "" }       # paste your ResearchGate URL
+  - { label: "LinkedIn",       url: "" }        # paste your LinkedIn URL
 
 # Top navigation (order matters)
 nav:
@@ -40,4 +39,4 @@ nav:
 #   https://sanaasif.netlify.app   or   https://drsanaasif.com
 base_url: "https://example.netlify.app"
 
-footer_note: "© Dr. Sana Asif. Built as a static site — fast, private, and yours."
+footer_note: "© Dr Sana Asif. Built as a static site — fast, private, and yours."
