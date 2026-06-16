@@ -25,4 +25,4 @@ panels:
 ---
 Welcome. This site is my scholarly home on the web, a place to publish what I'm
 thinking about, provide reading resources to my students, and share teaching
-materials with colleagues. Everything here is free to read and download. These materials cannot be used for commercial purposes.
+materials with colleagues.
