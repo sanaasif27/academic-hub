@@ -9,12 +9,11 @@ cta_secondary_label: About me
 cta_secondary_url: /about/
 panels:
   - title: Writing
-    body: Essays and notes on Partition literature, gender, memory, and teaching.
+    body: My musings
     url: /writing/
     cta: Browse posts
   - title: For students
-    body: Handouts, readings, and study materials for my current courses — free to
-      download.
+    body: Handouts, readings, and study materials for my current courses
     url: /teaching/
     cta: Open teaching
   - title: For colleagues
