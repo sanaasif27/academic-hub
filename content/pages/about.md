@@ -1,10 +1,9 @@
 ---
-title: "About"
-subtitle: "Partition, gender, and the geographies of memory"
-portrait: ""          # optional: upload a photo in the CMS; path goes here
-portrait_alt: "Portrait of Sana Asif"
+title: About
+subtitle: Partition, gender, and the geographies of memory
+portrait: ""
+portrait_alt: Portrait of Sana Asif
 ---
-
 I am **Sana Asif**, an Assistant Professor of English at Xavier University,
 Patna. I completed my PhD at the **National Institute of Technology Patna** in
 2024, with a thesis on *Gender and Spaces in Partition Fiction: A Study of Select
@@ -14,10 +13,9 @@ Novels by Muslim Women*.
 
 My work sits at the meeting point of **Partition studies, gender, and memory**. I
 am especially interested in how Muslim women's writing maps the spatial life of
-Partition — the city, the home, the threshold — and how gendered space becomes a
+Partition- the city, the home and the nation, and how gendered space becomes a
 site of both constraint and agency. My research draws on feminist criticism,
-memory studies, and cultural geography, and extends to oral history, graphic
-narratives, and the literature of conflict and precarity.
+memory studies, and cultural geography.
 
 I am the author of two Scopus-indexed journal articles on Partition writing by
 Muslim women, and a co-authored chapter (with Professor Nadia Butt, Goethe
@@ -41,10 +39,10 @@ South Asia.
 
 ## Selected interests
 
-- Partition studies & South Asian literature
-- Muslim women's writing; gender and space
-- Memory studies, oral history, and the literature of precarity
-- Feminist and postcolonial criticism; cultural geography
-- Inclusive, outcome-based pedagogy (UDL)
+* Partition studies & South Asian literature
+* Muslim women's writing; gender and space
+* Memory studies, oral history, and the literature of precarity
+* Feminist and postcolonial criticism; cultural geography
+* Inclusive, outcome-based pedagogy (UDL)
 
 *See my [CV](/cv/) for the full record, or [get in touch](/contact/).*
