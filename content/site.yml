@@ -1,42 +1,39 @@
-# =============================================================
-#  Global site settings — edited in the CMS under "Site settings"
-# =============================================================
-
-name: "Sana Asif"
-role: "Assistant Professor of English"
-institution: "Xavier University, Patna"
-tagline: "Gender, space, and memory in the literature of Partition."
+name: Sana Asif
+role: Assistant Professor of English
+institution: Xavier University, Patna
+tagline: Gender, space, and memory in the literature of Partition.
 intro: >
   I research and teach at the intersection of Partition studies, gender, and
-  memory — with a particular focus on the spatial worlds of Partition fiction
-  by Muslim women. This site is where I share my writing, the readings and
-  handouts my students need, and teaching materials for colleagues.
-
-# Where to reach you (leave any blank to hide it)
-email: "sana.asif@xup.ac.in"
-location: "Patna, Bihar, India"
-
-# Social / academic profiles (leave url blank to hide a row)
+  memory — with a particular focus on the spatial worlds of Partition fiction by
+  Muslim women. This site is where I share my writing, the readings and handouts
+  my students need, and teaching materials for colleagues.
+email: sana.asif@xup.ac.in
+location: Patna, Bihar, India
+base_url: https://sanaasif.netlify.app
+footer_note: © Sana Asif
 social:
-  - { label: "Email",          url: "mailto:sana.asif@xup.ac.in" }
-  - { label: "ORCID",          url: "https://orcid.org/0000-0001-8690-8244" }
-  - { label: "Scopus",         url: "https://www.scopus.com/authid/detail.uri?authorId=58552426700" }
-  - { label: "Google Scholar", url: "https://scholar.google.com/citations?hl=en&user=LbThjBUAAAAJ" }
-  - { label: "ResearchGate",   url: "https://www.researchgate.net/profile/Sana_Asif14" }
-  - { label: "LinkedIn",       url: "https://www.linkedin.com/in/sana-asif-phd-760a96138/" }
-
-# Top navigation (order matters)
+  - label: Email
+    url: mailto:sana.asif@xup.ac.in
+  - label: ORCID
+    url: https://orcid.org/0000-0001-8690-8244
+  - label: Scopus
+    url: https://www.scopus.com/authid/detail.uri?authorId=58552426700
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?hl=en&user=LbThjBUAAAAJ
+  - label: ResearchGate
+    url: https://www.researchgate.net/profile/Sana_Asif14
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/sana-asif-phd-760a96138/
 nav:
-  - { label: "About",     url: "/about/" }
-  - { label: "Writing",   url: "/writing/" }
-  - { label: "Teaching",  url: "/teaching/" }
-  - { label: "Resources", url: "/resources/" }
-  - { label: "CV",        url: "/cv/" }
-  - { label: "Contact",   url: "/contact/" }
-
-# Production domain (used for absolute links in RSS / sitemap / social cards).
-# After you connect Netlify, paste your real address here, e.g.
-#   https://sanaasif.netlify.app   or   https://drsanaasif.com
-base_url: "https://sanaasif.netlify.app"
-
-footer_note: "© Sana Asif. Built as a static site — fast, private, and yours."
+  - label: About
+    url: /about/
+  - label: Writing
+    url: /writing/
+  - label: Teaching
+    url: /teaching/
+  - label: Resources
+    url: /resources/
+  - label: CV
+    url: /cv/
+  - label: Contact
+    url: /contact/
