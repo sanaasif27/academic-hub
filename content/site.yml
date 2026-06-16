@@ -37,6 +37,6 @@ nav:
 # Production domain (used for absolute links in RSS / sitemap / social cards).
 # After you connect Netlify, paste your real address here, e.g.
 #   https://sanaasif.netlify.app   or   https://drsanaasif.com
-base_url: "https://example.netlify.app"
+base_url: "https://sanaasif.netlify.app"
 
 footer_note: "© Sana Asif. Built as a static site — fast, private, and yours."

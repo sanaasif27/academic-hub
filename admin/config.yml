@@ -16,8 +16,8 @@ public_folder: "/assets/uploads"
 
 # Show a friendly editor; keep entries tidy.
 publish_mode: simple
-site_url: https://example.netlify.app          # <-- update after deploy
-display_url: https://example.netlify.app       # <-- update after deploy
+site_url: https://sanaasif.netlify.app
+display_url: https://sanaasif.netlify.app
 
 collections:
   # ---------------------------------------------------------- WRITING (blog)
